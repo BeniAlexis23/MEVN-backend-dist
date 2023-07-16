@@ -7,7 +7,8 @@ const app = express();
 
 //Conexion a DB
 const mongoose = require('mongoose');
-const uri = 'mongodb://127.0.0.1/db-mevn';
+//const uri = 'mongodb://127.0.0.1/db-mevn';
+const uri = 'mongodb+srv://balh201317:balh201317@cluster0.ztd5zkf.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(uri).then(
     () => { console.log('connect to DB') },
